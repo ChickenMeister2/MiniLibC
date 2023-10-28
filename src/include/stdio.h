@@ -7,7 +7,7 @@
 extern "C" {
 #endif
 
-void puts(const char *str);
+int puts(const char *str);
 
 #ifdef __cplusplus
 }
