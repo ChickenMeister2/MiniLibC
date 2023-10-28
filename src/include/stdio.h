@@ -2,12 +2,12 @@
 
 #ifndef __STDIO_H__
 #define __STDIO_H__	1
-
+#define EOF (-1)
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-/* TODO: Add puts() declaration. */
+void puts(const char *str);
 
 #ifdef __cplusplus
 }

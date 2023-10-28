@@ -2,7 +2,7 @@
 
 #ifndef __UNISTD_H__
 #define __UNISTD_H__	1
-
+#define STDOUT_FILENO (1)
 #ifdef __cplusplus
 extern "C" {
 #endif
