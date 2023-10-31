@@ -26,7 +26,6 @@ char *strncpy(char *destination, const char *source, size_t len)
 		destination[i] = source[i];
 	for ( ; i < len; i++)
 		destination[i] = '\0';
-	
 	return destination;
 }
 
@@ -70,7 +69,7 @@ int strcmp(const char *str1, const char *str2)
 
 int strncmp(const char *str1, const char *str2, size_t len)
 {
-	while ( len && *str1 && ( *str1 == *str2 ) ) {
+	while ( len && *str1 && ( *str1 == *str2 )) {
 		++str1;
 		++str2;
 		--len;
@@ -177,9 +176,7 @@ void *memmove(void *destination, const void *source, size_t num)
 	{
 		for (size_t i = 0; i < num; i++)
 			dest[i] = src[i];
-	}
-	else
-	{
+	} else {
 		for (size_t i = num; i > 0; i--)
 			dest[i-1] = src[i-1];
 	}
@@ -189,7 +186,6 @@ void *memmove(void *destination, const void *source, size_t num)
 
 int memcmp(const void *ptr1, const void *ptr2, size_t num)
 {
-	
 	unsigned char u1, u2;
 
 	for ( ; num-- ; ptr1++, ptr2++) {
@@ -197,9 +193,9 @@ int memcmp(const void *ptr1, const void *ptr2, size_t num)
 		u2 = * (unsigned char *) ptr2;
 		if ( u1 != u2) {
 			return (u1-u2);
-		}	
+		}
 	}
-	
+
 	return 0;
 }
 
