@@ -7,7 +7,6 @@
 
 int stat(const char *restrict path, struct stat *restrict buf)
 {
-	
 	int res = syscall(__NR_stat, path, buf);
 
 	if (res < 0) {

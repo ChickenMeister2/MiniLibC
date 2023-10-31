@@ -40,7 +40,7 @@ void *calloc(size_t nmemb, size_t size)
     }
 
     return ptr;
-}   
+}
 
 void free(void *ptr)
 {

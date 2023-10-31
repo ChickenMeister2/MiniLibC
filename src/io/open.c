@@ -7,7 +7,7 @@
 
 int open(const char *filename, int flags, ...)
 {
-    int res = syscall(__NR_open,filename, flags);
+    int res = syscall(__NR_open, filename, flags);
     if (res < 0) {
         errno = -res;
         return -1;

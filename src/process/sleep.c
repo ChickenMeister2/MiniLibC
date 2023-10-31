@@ -14,14 +14,14 @@ unsigned int sleep(unsigned int seconds)
     tv.tv_nsec = 0;
 
 	while (1) {
-		int rval = nanosleep (&tv, &tv);
+		int rval = nanosleep(&tv, &tv);
 		if (rval == 0)
 			return 0;
 		else if (errno == EINTR)
 			continue;
-		else 
+		else
 		return rval;
 	}
- 	return 0;
+	return 0;
 }
 

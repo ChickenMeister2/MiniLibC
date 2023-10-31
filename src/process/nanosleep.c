@@ -4,7 +4,7 @@
 #include <errno.h>
 #include <time.h>
 
-int nanosleep(timespec *rqtp,timespec *rmtp)
+int nanosleep(timespec *rqtp, timespec *rmtp)
 {
 	int ret = syscall(__NR_nanosleep, rqtp, rmtp);
 
