@@ -69,7 +69,7 @@ int strcmp(const char *str1, const char *str2)
 
 int strncmp(const char *str1, const char *str2, size_t len)
 {
-	while ( len && *str1 && ( *str1 == *str2 )) {
+	while (len && *str1 && (*str1 == *str2)) {
 		++str1;
 		++str2;
 		--len;
@@ -191,7 +191,7 @@ int memcmp(const void *ptr1, const void *ptr2, size_t num)
 	for ( ; num-- ; ptr1++, ptr2++) {
 		u1 = * (unsigned char *) ptr1;
 		u2 = * (unsigned char *) ptr2;
-		if ( u1 != u2) {
+		if (u1 != u2) {
 			return (u1-u2);
 		}
 	}
