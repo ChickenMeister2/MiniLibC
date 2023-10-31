@@ -6,8 +6,7 @@
 
 int ftruncate(int fd, off_t length)
 {
-
-	int res = syscall(__NR_ftruncate, fd,length);
+	int res = syscall(__NR_ftruncate, fd, length);
 		if (res < 0) {
 			errno = -res;
 			return -1;

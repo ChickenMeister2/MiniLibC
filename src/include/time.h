@@ -12,7 +12,7 @@ typedef struct timespec {
     long tv_nsec;   // nanoseconds
 } timespec;
 
-int nanosleep(timespec *rqtp,timespec *rmtp);
+int nanosleep(timespec *rqtp, timespec *rmtp);
 unsigned int sleep(unsigned int seconds);
 
 #ifdef __cplusplus
