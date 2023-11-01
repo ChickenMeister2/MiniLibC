@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: BSD-3-Clause
-//https://www.informit.com/articles/article.aspx?p=23618&seqNum=11
+// www.informit.com/articles/article.aspx?p=23618&seqNum=11
+// www.developer.apple.com/library/archive/documentation
 
 #include <internal/io.h>
 #include <internal/syscall.h>

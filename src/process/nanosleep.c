@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: BSD-3-Clause
+// www.man7.org/linux/man-pages/man2/clock_nanosleep.2.html
+
 #include <internal/io.h>
 #include <internal/syscall.h>
 #include <internal/types.h>

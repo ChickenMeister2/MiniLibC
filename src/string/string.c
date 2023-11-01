@@ -1,4 +1,6 @@
 // SPDX-License-Identifier: BSD-3-Clause
+// www.ibm.com/docs
+// www.opensource.apple.com/source/BerkeleyDB
 
 #include <string.h>
 
@@ -7,7 +9,6 @@ char *strcpy(char *destination, const char *source)
 	if (destination == NULL) {
 		return NULL;
 	}
-	char *ptr = destination;
 	while (*source != '\0') {
 		*destination = *source;
 		destination++;
