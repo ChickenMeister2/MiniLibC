@@ -94,9 +94,7 @@ size_t strlen(const char *str)
 
 char *strchr(const char *str, int c)
 {
-	char ch;
 
-	ch = c;
 	for (;; ++str) {
 		if (*str == c)
 			return ((char *)str);
