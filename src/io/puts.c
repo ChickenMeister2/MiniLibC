@@ -6,7 +6,7 @@
 
 int puts(const char *s)
 {
-    size_t len = strlen(s);
+    ssize_t len = strlen(s);
     if (write(STDOUT_FILENO, s, len) != len) {
         return EOF;
     }
